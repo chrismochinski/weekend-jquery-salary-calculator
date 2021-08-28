@@ -11,7 +11,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 **TIPS**
 - TAKE SHORTEST PATH(S) TO BASE MODE
 
-- [ ] HTML, client.js, jQuery, log test
+- [x] HTML, client.js, jQuery, log test
 - [ ] build template in HTML (inputs, table, td/tr/etc)
 - [ ] drop in some super basic table styling
 - [ ] Button & click events (log test)

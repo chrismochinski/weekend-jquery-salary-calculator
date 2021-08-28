@@ -2,7 +2,8 @@ console.log('JS ready');
 
 $(document).ready(readyNow);
 
-function readyNow() {,.b
+function readyNow() {
     console.log('JQ ready');
+    
 }
 
