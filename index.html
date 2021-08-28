@@ -19,9 +19,9 @@
     <header>Salary Calculator</header>
 
 
-    <div class="inputs">
+    <div class="container">
         <!--this will be the main cotainer for the calculator contents-->
-        <h2 id="addEmployee">Add Employee</h1>
+        <h1 id="addEmployee">Add Employee:</h1>
             <table class="center">
                 <thead>
                     <tr>
@@ -36,17 +36,17 @@
                 <tbody>
                     <tr>
                         <div class="inputBlock">
-                            <td><input id="firstName" type="text" placeholder="e.g. Wilford" /></td>
-                            <td><input id="lastName" type="text" placeholder="e.g. Brimley" /></td>
-                            <td><input id="title" type="text" placeholder="e.g. Boss Man" /></td>
-                            <td><input id="employeeID" type="number" placeholder="5309" /></td>
-                            <td><input id="salary" type="number" placeholder="$63700" /></td>
+                            <td><input id="firstNameInput" type="text" placeholder="e.g. Wilford" /></td>
+                            <td><input id="lastNameInput" type="text" placeholder="e.g. Brimley" /></td>
+                            <td><input id="titleInput" type="text" placeholder="e.g. Boss Man" /></td>
+                            <td><input type="number" id="employeeIDInput" placeholder="5309" /></td>
+                            <td><input type="number" id="salaryInput" placeholder="$63700" /></td>
                         </div>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
-                        <td><button id="addEmployeeButton" class="center">Submit</button></td>
+                        <td><button id="submitButton" class="center">Submit</button></td>
                         <td></td>
                         <td></td>
 
@@ -63,30 +63,46 @@
                         <th>Title</th>
                         <th>ID</th>
                         <th>Salary</th>
+                        <th></th> <!--black to leave space for button-->
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="employeeTableBody"> <!--APPENDING TO THIS ID-->
                     <tr>
                         <td>Mochinki, Chris</td>
                         <td>Developer</td>
                         <td>6562</td>
                         <td>$65700</td>
+                        <td><button class="deleteButton">Delete</button></td>
                         <!-- <td></td> put the appended info here -->
                     </tr>
-
-                    <tr>
-                        <td>Jorenby, Tyler</td>
-                        <td>Software Dev</td>
-                        <td>6332</td>
-                        <td>$73600</td>
-                        <!-- <td></td> put the appended info here -->
-                    </tr>
+<!-- 
+                    <tr id="appendEmployee">  
+                        <td id="nameAppend"></td>
+                        <td id="titleAppend"></td>
+                        <td id="employeeIDAppend"></td>
+                        <td id="salaryAppend"></td>
+                        <td id="buttonAppend"></td>
+                    
+                    </tr> -->
+                    <!--total calculator below-->
+                    
+                    
 
 
                 </tbody>
 
 
+
             </table>
+            <table id="totalTable" class="center">
+                <thead>
+                    <td>TOTAL COST:</td>
+                    <td id="totalCostOutput">$0</td>  <!--this is where the total cost will go-->
+                </thead>
+            </table>
+            <tbody>
+                <!-- nothing needs to go here (for now)-->
+            </tbody>
 
 
 

@@ -12,17 +12,15 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - TAKE SHORTEST PATH(S) TO BASE MODE
 
 - [x] HTML, client.js, jQuery, log test
-- [ ] build template in HTML (inputs, table, td/tr/etc)
-- [ ] drop in some super basic table styling
-- [ ] Button & click events (log test)
-- [ ] Assign input to  variables
-- [ ] BASE - append data to do the DOM, (no need to use arrays?)  
+- [x] build template in HTML (inputs, table, td/tr/etc)
+- [x] drop in some super basic table styling
+- [x] Button & click events (log test)
+- [x] Assign input to  variables
+- [x] BASE - append data to do the DOM, (no need to use arrays?)  
+- [x] Delete!
 - [ ] Global variables for monthly costs (and append to dom)
 - [ ] Logic for background color(s?) monthly cost 
 - [ ] Delete button that removes a row
-- [ ] 
-- [ ] 
-
 
 
 ### SRETCH
