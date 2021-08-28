@@ -24,18 +24,19 @@ function appendEmployee () { //function to append employee info to table
     $('#employeeTableBody').append(`
         <tr><td>${lastName}, ${firstName}</td><td>${title}</td><td>${employeeID}</td><td>$${salary}</td><td><button class="deleteButton">Delete</button></td></tr>`)
 
-    $('#totalCostOutput').text('testing');
-        
-
         //clear input fields
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
     $('#titleInput').val('');
     $('#employeeIDInput').val('');
     $('#salaryInput').val('');
-
-
-    
-
+runningTotal(parseInt(salary));
 }
+let runningCost = 0; //starting point for the total cost at bottom
 
+function runningTotal(runningTotal) { //function pulls in the input SALARY and calcs running total
+    console.log('in runningTotal function'); //quick log
+    runningCost += runningTotal;
+    $('#totalCostOutput').text(`$${runningCost}`);
+    
+}
