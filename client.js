@@ -4,6 +4,8 @@ $(document).ready(readyNow);
 
 function readyNow() {
     console.log('JQ ready');
+    $('.deleteButton').on('click', deleteRow);
+    $('.appendTable').on('click', 'deleteButton', deleteRow);
     $('#submitButton').on('click', appendEmployee);
 }
 
@@ -16,6 +18,30 @@ function appendEmployee () { //function to append employee info to table
     let title = $('#titleInput').val();
     let employeeID = $('#employeeIDInput').val();
     let salary = $('#salaryInput').val();
+
+
+
+    //adding conditional for if fields have valid inputs
+if(firstName == '') {
+    alert('Please enter a first name');
+    return;
+}
+else if(lastName == '') {
+    alert('Please enter a last name');
+    return;
+}
+else if(title == '') {
+    alert('Please enter a title');
+    return;
+}
+else if(salary == '') {
+    alert('Please enter annual salary');
+    return;
+}
+else if(employeeID == ''){ //if no employeeID entered (could be common), return N/A
+    employeeID = 'N/A';
+}
+   
 
         //log input field results as they'll show on the DOM
     console.log(lastName + ',' ,firstName,'-', title,'-', employeeID,'-', salary);
@@ -30,8 +56,12 @@ function appendEmployee () { //function to append employee info to table
     $('#titleInput').val('');
     $('#employeeIDInput').val('');
     $('#salaryInput').val('');
+
+    $('.deleteButton').on('click', deleteRow);
+
 runningTotal(parseInt(salary));
 }
+
 let runningCost = 0; //starting point for the total cost at bottom
 
 function runningTotal(runningTotal) { //function pulls in the input SALARY and calcs running total
@@ -39,4 +69,14 @@ function runningTotal(runningTotal) { //function pulls in the input SALARY and c
     runningCost += runningTotal;
     $('#totalCostOutput').text(`$${runningCost}`);
     
+}
+
+
+
+
+function deleteRow() {
+    console.log('in delete row function');
+    console.log($(this));
+    let employeeData = $(this).parent().parent();
+    $(employeeData).remove();
 }

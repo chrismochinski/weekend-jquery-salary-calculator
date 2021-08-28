@@ -18,7 +18,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] Assign input to  variables
 - [x] BASE - append data to do the DOM, (no need to use arrays?)  
 - [x] Delete!
-- [ ] Global variables for monthly costs (and append to dom)
+- [x] Global variables for monthly costs (and append to dom)
 - [ ] Logic for background color(s?) monthly cost 
 - [ ] Delete button that removes a row
 

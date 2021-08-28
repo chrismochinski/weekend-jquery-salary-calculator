@@ -43,9 +43,15 @@ table.center {
 
 
 #submitButton {
-    margin-top: 15px;
+    margin-top: 20px;
+    transition-duration: .5s
     font-size: 16px;
     font-family: verdana, sans-serif;
+}
+
+#submitButton:hover {
+    transition-duration: 1s;
+    font-size: 30px;
 }
 
 #appendTableTop, th {
