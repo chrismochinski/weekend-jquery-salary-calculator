@@ -104,7 +104,11 @@ function deleteRow() {
             let monthlyRemoved = parseInt(removedEmployeeSalary  / 12);
             // console.log('removed monthly amount:', monthlyRemoved); // THIS IS THE MAGIC NUMBER
             // $('#totalCostOutput').text(`$${runningCost -= monthlyRemoved}`);
-            $('#totalCostOutput').text(`$${runningCost -= monthlyRemoved}`);
+            let finalRemoved = runningCost -= monthlyRemoved;
+            if(finalRemoved < 1.1){
+                finalRemoved = 0;
+            }
+            $('#totalCostOutput').text(`$${finalRemoved}`);
         }
         else{}
     }
