@@ -54,7 +54,7 @@ table.center {
     font-size: 30px;
 }
 
-#appendTableTop, th {
+#appendTableTop {
     text-decoration-line: underline;
 }
 

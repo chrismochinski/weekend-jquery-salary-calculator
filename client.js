@@ -9,17 +9,27 @@ function readyNow() {
     $('#submitButton').on('click', appendEmployee);
 }
 
-function appendEmployee () { //function to append employee info to table
+function appendEmployee() {
+    console.log('in appendEmployee function (did you click submit?');
+    inputEmployee($('#firstNameInput').val(), $('#lastNameInput').val(), $('#titleInput').val(), $('#employeeIDInput').val(), $('#salaryInput').val());
+
+}
+
+employeeArray = [];
+
+function inputEmployee (firstName, lastName, title, employeeID, salary) { //function to append employee info to table
     console.log('in appendEmployee function');
 
-        //create variables to pull in input field
-    let firstName = $('#firstNameInput').val();
-    let lastName = $('#lastNameInput').val();
-    let title = $('#titleInput').val();
-    let employeeID = $('#employeeIDInput').val();
-    let salary = $('#salaryInput').val();
-
-
+    let employee = {
+        firstName: firstName,
+        lastName: lastName,
+        title: title,
+        employeeID: employeeID,
+        salary: salary
+    }
+    employeeArray.push(employee);
+    console.log('Employee OBJECT:', employee);
+    console.log('employeeARRAY:', employeeArray)
 
     //adding conditional for if fields have valid inputs
 if(firstName == '') {
@@ -41,14 +51,14 @@ else if(salary == '') {
 else if(employeeID == ''){ //if no employeeID entered (could be common), return N/A
     employeeID = 'N/A';
 }
-   
 
         //log input field results as they'll show on the DOM
-    console.log(lastName + ',' ,firstName,'-', title,'-', employeeID,'-', salary);
+    console.log('Show on dom as:', lastName + ',' ,firstName,'-', title,'-', employeeID,'-', salary);
+
 
         //append employee info to DOM
     $('#employeeTableBody').append(`
-        <tr><td>${lastName}, ${firstName}</td><td>${title}</td><td>${employeeID}</td><td>$${salary}</td><td><button class="deleteButton">Delete</button></td></tr>`)
+        <tr><td>${lastName}, ${firstName}</td><td>${title}</td><td>${employeeID}</td><td id="salary" class>$${salary}</td><td><button class="deleteButton">Delete</button></td></tr>`)
 
         //clear input fields
     $('#firstNameInput').val('');
@@ -66,12 +76,9 @@ let runningCost = 0; //starting point for the total cost at bottom
 
 function runningTotal(runningTotal) { //function pulls in the input SALARY and calcs running total
     console.log('in runningTotal function'); //quick log
-    runningCost += runningTotal;
+    runningCost += ((runningTotal / 12).toFixed(2) * 1);
     $('#totalCostOutput').text(`$${runningCost}`);
-    
 }
-
-
 
 
 function deleteRow() {
@@ -79,4 +86,6 @@ function deleteRow() {
     console.log($(this));
     let employeeData = $(this).parent().parent();
     $(employeeData).remove();
+    $('#totalCostOutput').text(`$${runningCost -= 10}`); // WHERE WE LEFT OFFFFFFFFF
 }
+
