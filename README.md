@@ -1,30 +1,42 @@
  # Salary Calculator
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
-## Here's What's Happening...
+## Application uses employee information to calculate total montly labor costs
 
-Your project description goes here. What problem did you solve? How did you solve it?
+---
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+##### *Duration: Three-Day Sprint*
 
-**TIPS**
-- TAKE SHORTEST PATH(S) TO BASE MODE
-
-- [x] HTML, client.js, jQuery, log test
-- [x] build template in HTML (inputs, table, td/tr/etc)
-- [x] drop in some super basic table styling
-- [x] Button & click events (log test)
-- [x] Assign input to  variables
-- [x] BASE - append data to do the DOM, (no need to use arrays?)  
-- [x] Delete!
-- [x] Global variables for monthly costs (and append to dom)
-- [ ] Logic for background color(s?) monthly cost 
-- [ ] Delete button that removes a row
+In this app, a user inputs information about a specific employee and uses the app to calculate their organization's monthly labor cost total.
 
 
-### SRETCH
+---
 
-- [ ] Arrays/object to hold information??
-- [ ] Update total on delete
-- [ ] Alert th euser of missing fields
+![my screenshot](salary-calculator-starting-point.png)
+
+---
+
+![my screenshot](salary-calculator-screenshot.png)
+
+---
+
+### Prerequisites
+---
+- Internet browser application
+- Internet connection
+
+## Installation
+---
+No particular installation steps are required.
+
+## Usage
+---
+
+1. Open page by URL
+2. Enter employee first name (required)
+3. Enter employee last name (required)
+4. Enter employee job title (required)
+5. Enter employee ID (not required - will show N/A if no ID)
+6. Enter employee annual salary (required)
+7. Press "Submit" button. Notice the "TOTAL COST" is monthly and automatically calculated
+8. If needed, press the "Delete" button to remove a row
