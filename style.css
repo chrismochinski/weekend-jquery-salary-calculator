@@ -26,14 +26,9 @@ table.center {
 }
 
 #appendTable {
-    width: 50%;
+    width: 60%;
     background-color: tan;
     border: 1px solid black;
-    /* border-style: groove;
-    border-color: #000000; */
-    
-    /* padding-left: 20px;
-    padding-right: 20px; */
     margin-top: 20px; 
     padding-top: 10px;
 }
@@ -41,19 +36,22 @@ table.center {
 
 #submitButton {
     margin-top: 20px;
-    /* transition-duration: .5s */
-    font-size: 16px;
-    font-family: verdana, sans-serif;
+    transition-duration: .5s
+    background-color gray;
+    font-size: 17px;
 }
 
 #submitButton:hover {
-    /* transition-duration: .5s; */
-    /* font-size: 17px; */
+    transition-duration: .75s;
     background-color: rgb(178, 201, 237);
 }
 
 #appendTableTop {
     text-decoration-line: underline;
+}
+
+input {
+    opacity: 60%;
 }
 
 .appendTableBottom {
@@ -65,14 +63,32 @@ table.center {
 }
 
 #totalTable {
-
     padding-top: 20px;
 }
 
 .costOut {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .overTwentyK {
     background-color: tomato;
+}
+
+footer {
+    /* background-color: rgb(221, 230, 244); */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    /* border-style: double; */
+}
+
+#copyrightLine {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+#vsCodeAcknowledgement {
+    font-size: 12px;
+    margin-top: 0px;
+    color: rgb(187, 187, 187);
 }

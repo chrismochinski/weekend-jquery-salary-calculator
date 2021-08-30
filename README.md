@@ -9,21 +9,19 @@
 
 In this app, a user inputs information about a specific employee and uses the app to calculate their organization's monthly labor cost total.
 
+---
+
+![screenshot on launch](calc-on-launch.png)
 
 ---
 
-![screenshot on launch](salary-calculator-starting-point.png)
-
----
-
-![screenshot use](salary-calculator-screenshot.png)
+![screenshot use](calc-use.png)
 
 ---
 
 ### Prerequisites
 ---
-- Internet browser application
-- Internet connection
+- Internet browser application (e.g. Chrome, Safari)
 
 ## Installation
 ---
@@ -32,18 +30,18 @@ No particular installation steps are required.
 ## Usage
 ---
 
-1. Open page by URL
-2. Enter employee first name (required)
-3. Enter employee last name (required)
-4. Enter employee job title (required)
-5. Enter employee ID (not required - will show N/A if no ID)
-6. Enter employee annual salary (required)
-7. Press "Submit" button. Notice the "TOTAL COST" is monthly and automatically calculated
-8. If needed, press the "Delete" button to remove a row
+1. Enter employee first name (required) 
+2. Enter employee last name (required)
+3. Enter employee job title (required)
+4. Enter employee ID (not required - will show N/A if no ID)
+5. Enter employee annual salary (required)
+6. Press "Submit" button (notice the "TOTAL MONTHLY COST" is automatically calculated
+7. If needed, press the "Delete" button to remove a row
 
-## Build with
+## Built with
 ---
 Visual Studio Code
+
 
 ## License
 ---
@@ -53,8 +51,10 @@ None
 ---
 Thanks to my instructor Chris Black and [Prime Digital Academy](www.primeacademy.io) for giving me the tools to do some really rad stuff. 
 
-##### *(honorable mention also for my cohort mates - especially [Greg Tambornino](https://github.com/gtambo) and [Andy Ehrhardt](https://github.com/AndrewEhrhardt) - for taking the time to be helpful with this assignement)*
+[Santiago Orozco](https://fonts.google.com/?query=Santiago+Orozco) for providing typeface [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) via [Google Fonts](fonts.google.com).
+
+Honorable mention of my cohort mates - especially [Greg Tambornino](https://github.com/gtambo) and [Andy Ehrhardt](https://github.com/AndrewEhrhardt) - for taking the time to lend a second and third pair of eyes to this application.
 
 ## Support
 ---
-If you have questions or issues, please do not hesitate to email me at: [cmochinski@gmail.com](mailto:cmochinski@gmail.com).
+If you have questions or issues, please do not hesitate to email me at: [cmochinski@gmail.com](mailto:cmochinski@gmail.com). I'd love to hear from you!

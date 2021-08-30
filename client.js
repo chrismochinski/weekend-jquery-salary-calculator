@@ -5,7 +5,6 @@ $(document).ready(readyNow);
 function readyNow() {
     console.log('JQ ready');
     $('#submitButton').on('click', appendEmployee);
-    // $('.deleteButton').on('click', deleteRow);
     $('#appendTable').on('click', '.deleteButton', deleteRow);
 }
 
@@ -100,7 +99,7 @@ function deleteRow() {
             console.log('the annual salary of the removed employee:', removedEmployeeSalary);
             let monthlyRemoved = parseInt(removedEmployeeSalary / 12);
             console.log('removed monthly amount:', monthlyRemoved); // THIS IS THE MAGIC NUMBER
-            $('#totalCostOutput').text(`$${runningCost -= monthlyRemoved}`);
+            $('#totalCostOutput').text(`$${parseInt(runningCost -= monthlyRemoved)}`);
         }
         else { } //do nothing
     }
