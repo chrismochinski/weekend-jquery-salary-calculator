@@ -1,27 +1,22 @@
-![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/scottbromander/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/scottbromander/the_marketplace.svg?style=social)
- 
  # Salary Calculator
 
 
-## Application uses employee information to calculate total montly labor costs
+## Application uses employee information to calculate total ***monthly*** labor costs
 
 ---
 
-##### *Duration: Three-Day Sprint*
+##### _Duration: Two-Day Sprint_
 
 In this app, a user inputs information about a specific employee and uses the app to calculate their organization's monthly labor cost total.
 
 
 ---
 
-![my screenshot](salary-calculator-starting-point.png)
+![screenshot on launch](salary-calculator-starting-point.png)
 
 ---
 
-![my screenshot](salary-calculator-screenshot.png)
+![screenshot use](salary-calculator-screenshot.png)
 
 ---
 
@@ -45,3 +40,21 @@ No particular installation steps are required.
 6. Enter employee annual salary (required)
 7. Press "Submit" button. Notice the "TOTAL COST" is monthly and automatically calculated
 8. If needed, press the "Delete" button to remove a row
+
+## Build with
+---
+Visual Studio Code
+
+## License
+---
+None
+
+## Acknowledgement
+---
+Thanks to my instructor Chris Black and [Prime Digital Academy](www.primeacademy.io) for giving me the tools to do some really rad stuff. 
+
+##### *(honorable mention also for my cohort mates - especially [Greg Tambornino](https://github.com/gtambo) and [Andy Ehrhardt](https://github.com/AndrewEhrhardt) - for taking the time to be helpful with this assignement)*
+
+## Support
+---
+If you have questions or issues, please do not hesitate to email me at: [cmochinski@gmail.com](mailto:cmochinski@gmail.com).

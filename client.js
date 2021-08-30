@@ -55,7 +55,6 @@ function inputEmployee(firstName, lastName, title, employeeID, salary) { //funct
     //log input field results as they'll show on the DOM
     console.log('Show on dom as:', lastName + ',', firstName, '-', title, '-', employeeID, '-', salary);
 
-
     //append employee info to DOM
     $('#employeeTableBody').prepend(`
         <tr>
@@ -71,8 +70,6 @@ function inputEmployee(firstName, lastName, title, employeeID, salary) { //funct
     $('#titleInput').val('');
     $('#employeeIDInput').val('');
     $('#salaryInput').val('');
-
-    // $('.deleteButton').on('click', deleteRow);
 
     runningTotal(parseInt(salary));
 }
@@ -96,26 +93,20 @@ function deleteRow() {
     let removedEmployeeInfo = $(this).parent().parent().text(); //working to remove from total salary
     console.log(removedEmployeeInfo);
 
-    for(i=0; i<employeeArray.length; i++){ //for loop to check for employeeID
-        if(removedEmployeeInfo.includes(employeeArray[i].employeeID)){ //if the removed employee includes its own employee ID...
-            // console.log('true!', employeeArray[i].employeeID, 'Salary: $', parseInt(employeeArray[i].salary)); //logging out the annual salary
+    for (i = 0; i < employeeArray.length; i++) { //for loop to check for employeeID
+        if (removedEmployeeInfo.includes(employeeArray[i].employeeID)) { //if the removed employee includes its own employee ID...
+            console.log('true!', employeeArray[i].employeeID, 'Salary: $', parseInt(employeeArray[i].salary)); //logging out the annual salary
             let removedEmployeeSalary = parseInt(employeeArray[i].salary); // assign variable for annual salary
-            // console.log('the annual salary of the removed employee:', removedEmployeeSalary);
-            let monthlyRemoved = parseInt(removedEmployeeSalary  / 12);
-            // console.log('removed monthly amount:', monthlyRemoved); // THIS IS THE MAGIC NUMBER
-            // $('#totalCostOutput').text(`$${runningCost -= monthlyRemoved}`);
-            let finalRemoved = runningCost -= monthlyRemoved;
-            if(finalRemoved < 1.1){
-                finalRemoved = 0;
-            }
-            $('#totalCostOutput').text(`$${finalRemoved}`);
+            console.log('the annual salary of the removed employee:', removedEmployeeSalary);
+            let monthlyRemoved = parseInt(removedEmployeeSalary / 12);
+            console.log('removed monthly amount:', monthlyRemoved); // THIS IS THE MAGIC NUMBER
+            $('#totalCostOutput').text(`$${runningCost -= monthlyRemoved}`);
         }
-        else{}
+        else { } //do nothing
     }
 
-    let employeeData = $(this).parent().parent();
-    $(employeeData).remove();
-    
+    let employeeData = $(this).parent().parent(); //assigning variable to the row of info that is to be removed
+    $(employeeData).remove(); //remove row by variable
 
     if (runningCost < 20000) { //turning the number red if over 20k
         $('#totalCostOutput').css('backgroundColor', 'white');

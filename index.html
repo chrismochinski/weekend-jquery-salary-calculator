@@ -8,8 +8,9 @@
     <title>Salary Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Quicksand:wght@600&display=swap"
+        rel="stylesheet">
     <script src="jquery.js"></script>
     <script src="client.js"></script>
 </head>
@@ -18,101 +19,74 @@
 
     <header>Salary Calculator</header>
 
-
     <div class="container">
         <!--this will be the main cotainer for the calculator contents-->
         <h1 id="addEmployee">Add Employee:</h1>
-            <table class="center">
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Job Title</th>
-                        <th>Employee ID</th>
-                        <th>Annual Salary</th>
-                    </tr>
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Job Title</th>
+                    <th>Employee ID</th>
+                    <th>Annual Salary</th>
+                </tr>
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <div class="inputBlock">
-                            <td><input id="firstNameInput" type="text" placeholder="e.g. Wilford" /></td>
-                            <td><input id="lastNameInput" type="text" placeholder="e.g. Brimley" /></td>
-                            <td><input id="titleInput" type="text" placeholder="e.g. Boss Man" /></td>
-                            <td><input type="number" id="employeeIDInput" placeholder="5309" /></td>
-                            <td><input type="number" id="salaryInput" placeholder="$63700" /></td>
-                        </div>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td><button id="submitButton" class="center">Submit</button></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                </tbody>
-            </table>
-
-
-            <table class="center" id="appendTable">
-                <thead>
-                    <tr id="appendTableTop">
-                        <!-- <th></th> put the HEADER of the table here (maybe? or skip it??) -->
-                        <th>Name</th>
-                        <th>Title</th>
-                        <th>Employee ID</th>
-                        <th>Annual Salary</th>
-                        <th></th> <!--black to leave space for button-->
-                    </tr>
-                </thead>
-                <tbody id="employeeTableBody"> <!--APPENDING TO THIS ID-->
-                    <!-- <tr>
-                        <td>Mochinki, Chris</td>
-                        <td>Developer</td>
-                        <td>6562</td>
-                        <td>$65700</td>
-                        <td><button class="deleteButton">Delete</button></td>
-                       
-                    </tr>
-
-                    <tr id="appendEmployee">  
-                        <td id="nameAppend"></td>
-                        <td id="titleAppend"></td>
-                        <td id="employeeIDAppend"></td>
-                        <td id="salaryAppend"></td>
-                        <td id="buttonAppend"></td>
-                    
-                    </tr>  -->
-                    <!--total calculator below-->
-                    
-                    
-
-
-                </tbody>
-
-
-
-            </table>
-            <table id="totalTable" class="center">
-                <thead>
-                    <tr>
-                        <th class="costOut">TOTAL COST:   <span id=totalCostOutput>$0</span></th>
-                        <!-- <td class="costOut" id="totalCostOutput">$0</td>  this is where the total cost will go -->
-                        <th class="costOut"></th>
-                    </tr>
-                </thead>
-            </table>
+            </thead>
             <tbody>
-                <!-- nothing needs to go here (for now)-->
+                <tr>
+                    <div class="inputBlock">
+                        <td><input id="firstNameInput" type="text" placeholder="e.g. Wilford" /></td>
+                        <td><input id="lastNameInput" type="text" placeholder="e.g. Brimley" /></td>
+                        <td><input id="titleInput" type="text" placeholder="e.g. Boss Man" /></td>
+                        <td><input type="number" id="employeeIDInput" placeholder="5309" /></td>
+                        <td><input type="number" id="salaryInput" placeholder="$63700" /></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button id="submitButton" class="center">Submit</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class="center" id="appendTable">
+            <thead>
+                <tr id="appendTableTop">
+                    <!-- <th></th> put the HEADER of the table here (maybe? or skip it??) -->
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Employee ID</th>
+                    <th>Annual Salary</th>
+                    <th></th>
+                    <!--black to leave space for button-->
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody">
+                <!--APPENDING TO THIS ID-->
+
             </tbody>
 
 
+        </table>
 
-
+        <table id="totalTable" class="center">
+            <thead>
+                <tr>
+                    <th class="costOut">TOTAL COST: <span id=totalCostOutput>$0</span></th>
+                    <!-- <td class="costOut" id="totalCostOutput">$0</td>  this is where the total cost will go -->
+                    <th class="costOut"></th>
+                </tr>
+            </thead>
+        </table>
+        <tbody>
+            <!-- nothing needs to go here (for now)-->
+        </tbody>
     </div>
 
-
 </body>
-
 </html>
